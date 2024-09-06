@@ -26,10 +26,72 @@ header {
   font-size: 16px;
   padding-bottom: 40px;
 }
+header h1 {
+  color: white;
+  font-size: 16px;
+}
+
+/* section */
+
+section {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+section div {
+  width: 340px;
+  margin: 4% 0;
+  line-height: 25px;
+  box-shadow: 0 0 10px blue;
+}
+
+section div p {
+  padding: 4%;
+}
+
+/* parallax container */
+.parallax {
+  background-image: url(./imges/anime-style-character-meditating-contemplating-mindfulness.jpg);
+  /* center/cover no-repeat fixed; */
+  height: 20em;
+  background-color: blue;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* section stsff */
+
+.staff {
+  display: flex;
+  background-color: bisque;
+}
+
+.box-staff-about {
+  background-color: ;
+}
+
+.main-headin {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: blue;
+}
+.second-headin {
+  text-align: center;
+  margin-top: 24px;
+  color: blue;
+}
 /* tablet */
 @media only screen and (min-width: 767px) {
   header h1 {
     font-size: 26px;
+  }
+  section div {
+    width: 330px;
   }
 }
 /* desktop */
@@ -37,5 +99,8 @@ header {
   header h1 {
     font-size: 60px;
     color: brown;
+  }
+  section {
+    flex-direction: row;
   }
 }
