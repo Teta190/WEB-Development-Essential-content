@@ -67,7 +67,7 @@ section div p {
 
 .staff {
   display: flex;
-  background-color: bisque;
+  background-color: #00a5d4;
 }
 
 .box-staff-about {
@@ -102,5 +102,29 @@ section div p {
   }
   section {
     flex-direction: row;
+  }
+}
+
+/*for mobile */
+@media only screen and (max-width: 767px) {
+  section div img {
+    filter: brightness(50%);
+  }
+  .staff {
+    background-color: lightblue;
+  }
+}
+
+/* for tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  section div img {
+    filter: drop-shadow(40%);
+  }
+}
+
+/* for desktop */
+@media only screen and (min-width: 992px) {
+  section div img {
+    filter: none;
   }
 }
