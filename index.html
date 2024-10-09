@@ -6,21 +6,32 @@
     <title>Yoga Site</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <!-- background img, company title in the middle -->
-    <header>
-      <img class="logo" src="./imges/TETA YOGA.png" alt="logo for site" />
-      <!-- nav-menu -->
-      <nav>
+    <header class="header-navigation">
+      <div class="off-screen-menu">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#classes">Classes</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="/contact.html">Contact us</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./news.html">News</a></li>
+          <li>
+            <a href="./contact.html"
+              >Contact us</a
+            >
+          </li>
         </ul>
+      </div>
+
+      <nav>
+        <div class="logo">
+          <a href="./"><img src="./imges/TETA YOGA.png" alt="yoga" /></a>
+        </div>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
-      <div id="mobile_click" class="humburger">&#8801;</div>
-      <!-- nav-menu -->
     </header>
     <section class="hero">
       <h1>Teta Yoga</h1>
@@ -101,7 +112,24 @@
 
     <!-- contact form -->
 
-    <footer>&copy; 2024 Tetiana Malovichko</footer>
-    <script src="/script2.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>Information about our yoga studio</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2024 Teta Yoga. All rights reserved.
+      </p>
+    </footer>
+    <script src="./script2.js"></script>
   </body>
 </html>
