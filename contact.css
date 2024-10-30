@@ -151,11 +151,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row-reverse;
     justify-content: baseline;
-    /* justify-items: flex-start; */
-    /* align-items: center; */
     padding: 10px 20px;
-    /* background-color: #262727; */
-    /* color: blue; */
     text-decoration: none;
   }
 }
@@ -171,7 +167,11 @@ nav ul li a:hover {
 }
 
 /* ___________nav-menu____________ */
-
+.text-to-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* contact form */
 #contact {
   padding: 32px;
