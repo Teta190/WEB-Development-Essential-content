@@ -3,28 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yoga Site</title>
+    <title>Yoga Classes in Glasgow | Beginner to Advanced</title>
+    <meta
+      name="description"
+      content="Join our yoga classes in Glasgow. Suitable for all levels, from beginners to advanced practitioners. Book your class today!"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="styles.css" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- background img, company title in the middle -->
     <header class="header-navigation">
       <div class="off-screen-menu">
-        <ul>
-          <li><a href="./about.html">About us</a></li>
-          <li><a href="./news.html">News</a></li>
-          <li>
-            <a href="./contact.html"
-              >Contact us</a
-            >
-          </li>
-        </ul>
+         <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/classes.html">Classes</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+    <div id="mobile_click" class="humburger">&#8801;</div>
       </div>
 
       <nav>
         <div class="logo">
-          <a href="./"><img src="./imges/TETA YOGA.png" alt="yoga" /></a>
+          <a href=""><img src="./imges/TETA YOGA.png" alt="yoga" /></a>
         </div>
         <div class="ham-menu">
           <span></span>
@@ -94,8 +114,9 @@
     </section>
 
     <!--____________________ contact form ________________-->
-    <!-- <section id="contact">
-      <h2>Contact us</h2>
+
+     <h2 class="contact-us">Contact us</h2>
+    <section id="contact">
       <form>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
@@ -108,28 +129,59 @@
 
         <button type="button" onclick="alert('Form submitted!')">Send</button>
       </form>
-    </section> -->
+    </section>
 
     <!-- contact form -->
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-column">
-          <h3>About Us</h3>
-          <p>Information about our yoga studio</p>
+      <div class="find-map">
+
+        <p class="google-font">Find us</p>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.089542902304!2d-4.265761023434704!3d55.82640507311159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488846fac7512f97%3A0x97841ecc6b9f0395!2sGlasgow%20Clyde%20College%20-%20Langside%20Campus!5e0!3m2!1spl!2suk!4v1729846203025!5m2!1spl!2suk"
+        width="100%"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" >
+        </iframe>
+
+         
+      </div>
+    
+      <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>Information about our yoga studio Lorem ipsum dolor 
+              sit amet consectetur adipisicing elit. Quae omnis a 
+              exercitationem maiores animi facilis, 
+              ibero doloremque, veniam ad officiis, 
+              similique dignissimos excepturi obcaecati harum fugiat
+              ipsum suscipit repudiandae delectus!</p>
+          </div>
+    
+
+         
+          <div class="footer-column">
+            <h3 class="ifollow">Follow Us</h3>
+            <div class="ifooter">
+            <a href="http://facebook.com">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="http://instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="http://tiktok.com"> <i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        <div class="phone-us">
+         <a href="tel:+4407837334445"><i class="fa-solid fa-phone"></i></a> <span>+4407837334445</span>
         </div>
 
-        <div class="footer-column">
-          <h3>Follow Us</h3>
-          <a href="#">Facebook</a>
-          <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
         </div>
-      </div>
-      <p class="footer-copyright">
-        &copy; 2024 Teta Yoga. All rights reserved.
-      </p>
-    </footer>
+     
+      </footer>
+
     <script src="./script2.js"></script>
   </body>
 </html>

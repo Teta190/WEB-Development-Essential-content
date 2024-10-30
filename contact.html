@@ -5,23 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./contact.css" />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <nav>
+      <header class="header-navigation">
+      <div class="off-screen-menu">
+         <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#classes">Classes</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/classes.html">Classes</a></li>
+        <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact us</a></li>
       </ul>
     </nav>
     <div id="mobile_click" class="humburger">&#8801;</div>
-    <header>
-      <h1>Teta Yoga</h1>
+      </div>
+
+      <nav>
+        <div class="logo">
+          <a href=""><img src="./imges/TETA YOGA.png" alt="yoga" /></a>
+        </div>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
     <!-- contact form -->
     <section id="contact">
-      <h2>Contact us</h2>
+      <h2 class="contact-us">Contact us</h2>
 
       <form action="" class="contact-form" onsubmit="return validateForm()">
         <label for="name">Name:</label>
@@ -41,7 +60,34 @@
     </section>
 
     <!-- contact form -->
-    <footer></footer>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>Information about our yoga studio Lorem ipsum dolor 
+              sit amet consectetur adipisicing elit. Quae omnis a 
+              exercitationem maiores animi facilis, 
+              ibero doloremque, veniam ad officiis, 
+              similique dignissimos excepturi obcaecati harum fugiat
+              ipsum suscipit repudiandae delectus!</p>
+          </div>
+          <div class="footer-column">
+            <h3 class="ifollow">Follow Us</h3>
+            <div class="ifooter">
+            <a href="http://facebook.com">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="http://instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="http://tiktok.com"> <i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        <div class="phone-us">
+         <a href="tel:+4407837334445"><i class="fa-solid fa-phone"></i></a> <span>+4407837334445</span>
+        </div>
+        </div>
+      </footer>
+
     <script src="/script2.js"></script>
   </body>
 </html>
